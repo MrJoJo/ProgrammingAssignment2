@@ -1,6 +1,5 @@
-## This creates object methods/functions similar to makeVector and cachemean.
-## makeCacheMatrix will be passed a matrix, 
-## and make methods any makeCacheMatrix objects. 
+## makeCacheMatrix will accept a matrix
+## and creates object methods similar to makeVector.
 
 makeCacheMatrix <- function(x = matrix()) {
      m <- NULL 
@@ -17,8 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
-## cacheSolve will solve & return solution OR return solution from cache
+## cacheSolve will solve & return solution for the matrix
+## OR return a solution from cache
 ## We assume passed matrix is square and invertible
 
 cacheSolve <- function(x, ...) {
